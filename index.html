@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              primaryColor: "#00B4FF",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Portfolio</title>
+    <style>
+      .gradient {
+        background-image: radial-gradient(#00b3ffb3, #00b3ff70, #00b3ff1c);
+        filter: blur(62px);
+        body {
+          font-family: "Inter", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 600;
+          font-style: normal;
+        }
+      }
+    </style>
+  </head>
+  <body class="border-2 border-red-600">
+    <!-- nav -->
+    <header
+      class="relative w-full md:w-11/12 lg:w-9/12 mx-auto mt-3 mb-6 border-2 border-white"
+    >
+      <!-- <div
+        class="w-80 h-80 absolute -top-52 left-52 gradient rounded-full z-10 blur(3xl)"
+      ></div> -->
+      <nav class="text-primaryColor flex items-center justify-between my-2">
+        <h2 class="font-bold text-3xl hover:underline">Rajib S.</h2>
+        <div class="navmenu hidden lg:flex">
+          <li class="hover:underline">Home</li>
+          <li class="hover:underline">About</li>
+          <li class="hover:underline">Skill</li>
+          <li class="hover:underline">Service</li>
+          <li class="hover:underline">Cotact</li>
+          <div
+            class="button hover:underline flex justify-center items-center border-2 border-primaryColor rounded py-2 px-2 gap-2"
+          >
+            <span>Download</span> <span>CV</span>
+          </div>
+          <!-- <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-6"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 5.25Zm0 4.5A.75.75 0 0 1 3.75 9h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 9.75Zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg> -->
+        </div>
+        <div
+          class="navBox justify-center items-center gap-1 flex md:flex lg:hidden"
+        >
+          <div
+            class="button hover:underline flex justify-center items-center border-2 border-primaryColor rounded py-2 px-2 gap-2"
+          >
+            <span>Download</span> <span>CV</span>
+          </div>
+          <div class="dropdown dropdown-hover">
+            <div tabindex="0" role="button" class="btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 5.25Zm0 4.5A.75.75 0 0 1 3.75 9h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 9.75Zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+            >
+              <li class="hover:underline"><a href="#">About</a></li>
+              <li class="hover:underline"><a href="#">Home</a></li>
+              <li class="hover:underline"><a href="#">Skill</a></li>
+              <li class="hover:underline"><a href="#">Service</a></li>
+              <li class="hover:underline"><a href="#">Cotact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- banner  -->
+      <!-- <div
+        class="banner w-9/12 mx-auto gap-2 flex flex-col-reverse justify-between items-center lg:flex-row"
+      >
+        <div class="content self-center">
+          <div>
+            <h4 class="pb-5 text-3xl text-white">Hi, I’m Rajib Sardar</h4>
+            <h1 class="text-6xl pb-5 font-bold text-primaryColor">
+              Forntend Developer
+            </h1>
+            <p class="pb-3 leading-5 text-white">
+              with a passion for crafting intuitive and visually appealing
+              websites. <br />From responsive design to smooth user
+              interactions, I focus on every detail. <br />Let's collaborate to
+              bring your vision to life. <br />Explore my portfolio and see how
+              I can help you achieve your goals.
+            </p>
+            <div class="box flex gap-2 my-2">
+              <div
+                class="button hover:bg-sky-800 flex justify-center items-center bg-primaryColor rounded py-2 px-2 gap-2 text-white font-bold"
+              >
+                <span>Download</span> <span>CV</span>
+              </div>
+              <div
+                class="button hover:underline flex justify-center items-center border-2 border-primaryColor rounded py-2 px-2 gap-2 font-bold text-primaryColor"
+              >
+                <div class="border-3 border-primaryColor text-primaryColor">
+                  <span>Contact</span> <span>Me</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="img w-96 relative mx auto ml-8">
+          <img class="" src="./Images/hero.png" alt="" />
+          <div
+            class="w-64 h-80 top-[7rem] left-[2rem] transfrom-translate-x-[-2rem] transfrom-translate-y-[5rem] -z-20 gradient rounded-full blur(3xl) absolute"
+          ></div>
+        </div>
+      </div> -->
+
+      <!-- <div
+        class="bg-[#35343442] text-primaryColor mx-auto text-center  font-bold text-3xl py-4 mb-4"
+      >
+        About Me
+      </div> -->
+      <!-- short breaf about me  -->
+      <!-- <div
+        class="items-center bg-base-100 bg-[#63585869] text-white flex flex-col lg:flex-row justify-evenly mb-4"
+      >
+        <figure class="w-56">
+          <img src="./Images/Group 15.png" alt="" />
+        </figure>
+        <div class="w-full text-center lg:w-1/2 m-0 p-0">
+          <p>
+            <span class="text-3xl font-light">Hi,</span>I'm Rajb Sardar, a
+            passionate frontend developer with a love for creating visually
+            appealing and user-friendly web experiences. With a strong
+            foundation in HTML, CSS, and JavaScript, I specialize in building
+            responsive websites that not only look great but also provide a
+            seamless user experience. Over the years, I've honed my skills by
+            working on a variety of projects, from simple landing pages to
+            complex web applications. My goal is to turn creative ideas into
+            functional, engaging digital products. When I'm not coding, I enjoy
+            staying up-to-date with the latest web development trends and
+            continuously learning new technologies to keep my skills sharp.
+            Let's connect and create something amazing together!
+          </p>
+        </div>
+      </div> -->
+      <!-- skills  -->
+      <!-- <div>
+      <div
+      class="text-primaryColor mx-auto text-center font-bold text-3xl py-4"
+    >
+      Skills
+    </div>
+<p class="w-2/3 text-center text-white mx-auto mb-6">Proficient in HTML, CSS, JavaScript, and React.js, I specialize in creating responsive and visually stunning web applications. With a strong foundation in UI/UX design and modern development tools, I bring ideas to life with precision and creativity.</p>
+  </div>  -->
+      <!-- card  -->
+      <!-- <div class="grid grid-cols-12 px-4 w-9/12 gap-4">
+  <div class="p-3 rounded-xl bg-base-100 border-2 border-primaryColor hover:bg-primaryColor col-span-3">
+    <figure>
+      <img
+        src="./Images/html.png"
+        alt="html"
+        class="rounded-xl" />
+    </figure>
+    <div class="text-left">
+      <h2 class="text-white font-bold py-4">HTML5</h2>
+      <p >Crafting clean, semantic, and accessible web structures is at the core of my development process. I ensure that every element is purposefully chosen, enhancing both user experience and SEO. By adhering to best practices</p>
+
+    </div>
+  </div>
+  <div class="p-3 rounded-xl bg-base-100 border-2 border-primaryColor hover:bg-primaryColor col-span-3">
+    <figure>
+      <img
+        src="./Images/html.png"
+        alt="html"
+        class="rounded-xl" />
+    </figure>
+    <div class="text-left">
+      <h2 class="text-white font-bold py-4">HTML5</h2>
+      <p >Crafting clean, semantic, and accessible web structures is at the core of my development process. I ensure that every element is purposefully chosen, enhancing both user experience and SEO. By adhering to best practices</p>
+
+    </div>
+  </div>
+  <div class="p-3 rounded-xl bg-base-100 border-2 border-primaryColor hover:bg-primaryColor col-span-3">
+    <figure>
+      <img
+        src="./Images/html.png"
+        alt="html"
+        class="rounded-xl" />
+    </figure>
+    <div class="text-left">
+      <h2 class="text-white font-bold py-4">HTML5</h2>
+      <p >Crafting clean, semantic, and accessible web structures is at the core of my development process. I ensure that every element is purposefully chosen, enhancing both user experience and SEO. By adhering to best practices</p>
+
+    </div>
+  </div>
+  <div class="p-3 rounded-xl bg-base-100 border-2 border-primaryColor hover:bg-primaryColor col-span-3">
+    <figure>
+      <img
+        src="./Images/html.png"
+        alt="html"
+        class="rounded-xl" />
+    </figure>
+    <div class="text-left">
+      <h2 class="text-white font-bold py-4">HTML5</h2>
+      <p >Crafting clean, semantic, and accessible web structures is at the core of my development process. I ensure that every element is purposefully chosen, enhancing both user experience and SEO. By adhering to best practices</p>
+
+    </div>
+  </div>
+</div> -->
+    </main>
+  </body>
+</html>
